@@ -6,12 +6,12 @@ plugins {
 
 android {
     namespace = "com.example.adtech"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.adtech"
-        minSdk = 24
-        targetSdk = 34
+        minSdk = 21
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -37,6 +37,11 @@ android {
     buildFeatures {
         compose = true
     }
+
+
+    composeOptions {
+        kotlinCompilerExtensionVersion = libs.versions.androidx.compose.compiler.get()
+    }
 }
 
 dependencies {
@@ -56,4 +61,5 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    implementation(project(":sdkad"))
 }
