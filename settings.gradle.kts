@@ -21,4 +21,9 @@ dependencyResolutionManagement {
 
 rootProject.name = "AdTech"
 include(":app")
- 
+include(":repositoires:remote")
+include(":api")
+include(":features:fullscreenad")
+include(":presentation:fullscreenad")
+include(":sdkad")
+include(":domain")
